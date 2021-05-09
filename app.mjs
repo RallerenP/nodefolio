@@ -12,6 +12,8 @@ import fs from "fs";
 
 const app = express();
 
+const PORT = process.env.PORT || 8080;
+
 app.use(express.static('public'));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
@@ -33,8 +35,8 @@ async function run() {
     app.use('/recommendations', recommendationsRouter)
     app.use('/projects', projectsRouter)
 
-    app.listen(3000, () => {
-        console.log('Listening on port 3000...')
+    app.listen(PORT, () => {
+        console.log(`Listening on port ${PORT}`)
     })
 }
 
