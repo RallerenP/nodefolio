@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+br {
+    margin: 10px;
+}
+
+hr {
+    width: 100%;
+}
+
+hr.half {
+    width: 50%;
+}
+
+body {
+    background: black;
+    margin: 0;
+    padding: 0;
+
+
+    overflow-x: hidden;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.progress-outer {
+    width: 100%;
+    background: rgba(47, 175, 129, 0.3);
+}
+
+.progress-outer>.progress-inner\:100 {
+    width: 100%;
+    background: #2faf81;
+    color: white;
+}
+
+.progress-outer>.progress-inner\:90 {
+    width: 90%;
+    background: #2faf81;
+    color: white;
+}
+
+.progress-outer>.progress-inner\:80 {
+    width: 80%;
+    background: #2faf81;
+    color: white;
+}
+
+.progress-outer>.progress-inner\:70 {
+    width: 70%;
+    background: #2faf81;
+    color: white;
+}
+
+.progress-outer>.progress-inner\:60 {
+    width: 60%;
+    background: #2faf81;
+    color: white;
+}
+
+.progress-outer>.progress-inner\:50 {
+    width: 50%;
+    background: #2faf81;
+    color: white;
+}
+
+.progress-outer>.progress-inner\:40 {
+    width: 40%;
+    background: #2faf81;
+    color: white;
+}
+
+.progress-outer>.progress-inner\:30 {
+    width: 30%;
+    background: #2faf81;
+    color: white;
+}
+
+.progress-outer>.progress-inner\:20 {
+    width: 20%;
+    background: #2faf81;
+    color: white;
+}
+
+.progress-outer>.progress-inner\:10 {
+    width: 10%;
+    background: #2faf81;
+    color: white;
+}
+
+div[class*="progress-inner"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.grow {
+    flex-grow: 1;
+}
+
+#header {
+    padding: 0 20px 0 20px;
+    height: 70px;
+    width: 100%;
+
+    display: flex;
+
+    box-sizing: border-box;
+
+    align-items: center;
+}
+
+#header * {
+    margin: 0;
+    padding: 0;
+}
+
+#header a {
+    text-decoration: none;
+    padding: 0 20px 0 20px;
+    color: #2faf81;
+}
+
+#header a:hover {
+    text-decoration: underline;
+}
+
+#header-branding a {
+    color: white;
+    font-size: 2rem;
+}
+
+#main-bg {
+    background: url("/media/images/fp-background.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+#contact-bg {
+    background: url("/media/images/contact-bg.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+#contact-form {
+    background: white;
+    border-radius: 25px;
+    min-height: 50px;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #2faf81;
+}
+
+label {
+    margin-top: 10px;
+}
+
+#contact-form input,textarea {
+    width: 100%;
+    height: 48px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    background: white;
+}
+
+#contact-form button {
+    background: #2faf81;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    padding: 15px;
+    float: right;
+    font-weight: lighter;
+    border: none;
+    color: white;
+}
+
+#contact-form textarea {
+    height: 100%;
+    border: 1px solid #F0F0F0;
+
+    margin-bottom: 10px;
+}
+
+#contact-form input:hover {
+    background: #F0F0F0;
+}
+
+#contact-form-container {
+    display: flex;
+
+}
+
+#contact-form-container>div {
+    width: 50%;
+    padding: 10px 10px 10px 0;
+}
+
+#branding {
+    position: absolute;
+    top: 35%;
+    left: 65%;
+    transform: scale(2.5,2.5);
+    color: #2faf81;
+}
+
+#branding h3 {
+    margin: 0;
+    padding: 0;
+}
+
+#footer {
+    height: 48px;
+    width: 100%;
+    background: #2faf81;
+
+    position: absolute;
+
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    color: white;
+
+    box-sizing: border-box;
+
+    padding: 0 10px 0 10px
+}
+
+/* SKILL PAGE */
+
+.container {
+    position: absolute;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    top: 50%;
+    left: 65%;
+
+    width: 55%;
+
+    height: 75%;
+
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 25px;
+}
+
+.container>div {
+    margin: 25px 0;
+    width: 75%;
+}
+
+/* EDUCATION PAGE */
+
+#education {
+    position: absolute;
+    top: 35%;
+    left: 65%;
+    transform: scale(2.5,2.5);
+}
+
+/* RECOMMENDATIONS PAGE */
+
+.placeholder-image {
+    height: 150px;
+    width: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #2faf81;
+}
+
+.recommendation {
+    display: flex;
+}
+
+.recommendation-information {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.recommendation-information h3 {
+    flex-shrink: 1;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.recommendation-information p {
+    margin: 0;
+    padding: 0;
+}
